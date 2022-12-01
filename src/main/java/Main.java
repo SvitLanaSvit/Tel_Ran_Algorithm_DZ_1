@@ -40,6 +40,12 @@ public class Main {
                 a = a + i + j;
 
     }
+    //i = 0 j=5 j=n
+    //i = 0 j=4
+    //i = 0 j=3
+    //i = 0 j=2
+    //i = 0 j=1
+
 
     //Time Complexity O(n) * O(log n) = O(n * log n)
     //Space Complexity O(1)
