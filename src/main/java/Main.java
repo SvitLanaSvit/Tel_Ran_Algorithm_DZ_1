@@ -77,9 +77,7 @@ public class Main {
 
     //3)Задачки со звёздочкой - вычислить сложность в лучшем и худшем случае.
     //(N / 2^x )< 1 OR  2^x > N
-    //Time Complexity O(1) if (n == 1)
-    //Time Complexity O(log n) if (n > 2)
-    //Time Complexity O(n) if (n == 2)
+    //Time Complexity O(log n)
 
     static void test5(int n)
     {
@@ -90,8 +88,7 @@ public class Main {
         }
     }
 
-    //Time Complexity O(1) if (a - b == 1 || b - a == 1)
-    //Time Complexity O(n) if (a - b == n || b - a == n)
+    //Time Complexity O(n)
     static void method(int a, int b) {
         while (a != b) {
             if (a > b) {
@@ -102,8 +99,7 @@ public class Main {
         }
     }
 
-    //Time Complexity O(1) * O(1) * O(n) = O(n) if (n == 2)
-    //Time Complexity O(n) * O(n) * O(log n) = O(n^2 * log n) if (n > 2)
+    //Time Complexity O(n) * O(n) * O(log n) = O(n^2 * log n)
     static void method2(int n) {
         for (int i = 0; i < n / 2; i++) { System.out.println("1");             //O(n)
             for (int j = 1; j + n / 2 <= n; j++) {                             //O(n)
@@ -120,8 +116,6 @@ public class Main {
     //i=0, j=1, k=8
     //i=0, j=1, k=16
 
-
-    //Time Complexity O(1) * O(1) = O(1) if (n == 1)
     //Time Complexity O(n) * O(n) = O(n^2) if (n > 2)
     static void method3(int n) {
         for (int i = 1; i <= n; i++) {               //O(n)
