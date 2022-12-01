@@ -114,6 +114,12 @@ public class Main {
             }
         }
     }
+    //i=0, j=1, k=1
+    //i=0, j=1, k=2
+    //i=0, j=1, k=4
+    //i=0, j=1, k=8
+    //i=0, j=1, k=16
+
 
     //Time Complexity O(1) * O(1) = O(1) if (n == 1)
     //Time Complexity O(n) * O(n) = O(n^2) if (n > 2)
