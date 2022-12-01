@@ -103,12 +103,12 @@ public class Main {
     }
 
     //Time Complexity O(1) * O(1) * O(n) = O(n) if (n == 2)
-    //Time Complexity O(log n) * O(n) * O(log2 n) = O(n * log n * log2 n) if (n > 2)
+    //Time Complexity O(n) * O(n) * O(log n) = O(n^2 * log n) if (n > 2)
     static void method2(int n) {
-        for (int i = 0; i < n / 2; i++) { System.out.println("1");             //O(log n)
+        for (int i = 0; i < n / 2; i++) { System.out.println("1");             //O(n)
             for (int j = 1; j + n / 2 <= n; j++) {                             //O(n)
                 System.out.println("2");
-                for (int k = 1; k <= n; k = k * 2) {                           //O(log2 n)
+                for (int k = 1; k <= n; k = k * 2) {                           //O(log n) 2^k = n log2(k) = n
                     System.out.println("I am expert!");
                 }
             }
@@ -116,10 +116,10 @@ public class Main {
     }
 
     //Time Complexity O(1) * O(1) = O(1) if (n == 1)
-    //Time Complexity O(n) * O(log n) = O(n log n) if (n > 2)
+    //Time Complexity O(n) * O(n) = O(n^2) if (n > 2)
     static void method3(int n) {
         for (int i = 1; i <= n; i++) {               //O(n)
-            for (int j = 1; j <= n; j = j + i) {     //O(log n)
+            for (int j = 1; j <= n; j = j + i) {     //O(n)
                 System.out.println("I am expert!");
             }
         }
