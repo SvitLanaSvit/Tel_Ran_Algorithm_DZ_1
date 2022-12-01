@@ -88,7 +88,8 @@ public class Main {
         }
     }
 
-    //Time Complexity O(n)
+    //Time Complexity O(n)         worst
+    //Time Complexity O(1) if a==b best
     static void method(int a, int b) {
         while (a != b) {
             if (a > b) {
