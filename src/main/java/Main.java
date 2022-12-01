@@ -103,7 +103,7 @@ public class Main {
     }
 
     //Time Complexity O(1) * O(1) * O(n) = O(n) if (n == 2)
-    //Time Complexity O(log n) * O(n) * O(log2 n) = O(n * log n * logk n) if (n > 2)
+    //Time Complexity O(log n) * O(n) * O(log2 n) = O(n * log n * log2 n) if (n > 2)
     static void method2(int n) {
         for (int i = 0; i < n / 2; i++) { System.out.println("1");             //O(log n)
             for (int j = 1; j + n / 2 <= n; j++) {                             //O(n)
